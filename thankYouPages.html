@@ -1,0 +1,124 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Yeseva+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        @keyframes jumpe {
+            0% {
+                transform: scaleY(1);
+            }
+
+            25% {
+                transform: scaleY(0.8) translateY(-20%);
+            }
+
+            50% {
+                transform: scaleY(1) translateY(0);
+            }
+/* 
+            75% {
+                transform: scaleY(0.8) translateY(10px);
+            }
+            100% {
+                transform: scaleY(1) translateY(0);
+            } */
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans', sans-serif;
+            width: 100%;
+            max-width: 567px;
+            margin: auto;
+            height: 100%;
+            max-height: 582px;
+            /* margin-top: 25px; */
+            /* border: 1px solid rgb(70, 167, 8); */
+            /* box-shadow: 1px 1px 2px 1px rgb(70, 167, 8); */
+        }
+
+        header {
+            text-align: center;
+            padding-top: 15px;
+        }
+
+        header .logo {
+            width: 200px;
+        }
+
+        header h1 {
+            text-align: center;
+            font-size: calc(32px + 1vw);
+            text-transform: uppercase;
+            color: black;
+            text-shadow: 1px 1px white;
+        }
+
+        .content {
+            text-align: center;
+        }
+
+        .content .fa-check {
+            font-size: calc(80px + 4vw);
+            color: green;
+        }
+
+        .content .fa-check:hover {
+            animation-name: jumpe;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+
+        .content .back-next {
+            background: linear-gradient(135deg, rgb(70, 167, 8) 20%, darkgreen 95%);
+            ;
+            color: white;
+            border-radius: 5px;
+            padding: 0.3em 1.5em;
+            margin: auto;
+            font-weight: bold;
+            font-size: calc(18px +1vw);
+        }
+
+        @media (max-width:567px) {
+            .content .thankyou {
+                display: block;
+            }
+        }
+
+        .content .linkqueencrown:link {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="" class="logo">
+        <h1>Thank You!</h1>
+    </header>
+    <div class="content">
+        <div>
+            <i class="fa fa-check"></i>
+        </div>
+        <p class="thankyou">Queencrown cảm ơn khách hàng đã
+            <span>
+                ĐĂNG KÍ TƯ VẤN
+            </span>
+        </p>
+        <a href="" class="linkqueencrown">Quay lại trang chủ</a>
+    </div>
+
+</body>
+
+</html>
